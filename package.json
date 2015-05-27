@@ -1,0 +1,24 @@
+{
+  "name": "browser-battery",
+  "version": "1.0.0",
+  "description": "Get battery information in a browser",
+  "license": "MIT",
+  "repository": "gillstrom/browser-battery",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "battery",
+    "browser",
+    "charge",
+    "charging"
+  ]
+}
