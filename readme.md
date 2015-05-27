@@ -1,4 +1,4 @@
-# browser-battery [![Build Status](https://travis-ci.org/gillstrom/browser-battery.svg?branch=master)](https://travis-ci.org/gillstrom/browser-battery)
+# browser-battery
 
 > Get battery information in a browser
 
