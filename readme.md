@@ -35,6 +35,11 @@ browserBattery(function (err, battery) {
 ```
 
 
+## Related
+
+* [battery-level](https://github.com/gillstrom/battery-level) - Get current battery level (OS X, Linux and Windows)
+
+
 ## License
 
 MIT © [Andreas Gillström](http://github.com/gillstrom)
