@@ -1,6 +1,6 @@
 # browser-battery
 
-> Get battery information in a browser
+> Get and watch battery information in a browser
 
 *Currently working in Chrome, Firefox and Opera.*
 
@@ -31,6 +31,14 @@ browserBattery(function (err, battery) {
 		onlevelchange: null
 	}
 	 */
+});
+
+// Use the event listeners
+browserBattery(function (err, battery) {
+	battery.onlevelchange = function () {
+		console.log(battery.level);
+		//=> 0.89
+	};
 });
 ```
 

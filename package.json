@@ -1,7 +1,7 @@
 {
   "name": "browser-battery",
   "version": "1.0.2",
-  "description": "Get battery information in a browser",
+  "description": "Get and watch battery information in a browser",
   "license": "MIT",
   "repository": "gillstrom/browser-battery",
   "author": {
@@ -19,6 +19,8 @@
     "battery",
     "browser",
     "charge",
-    "charging"
+    "charging",
+    "level",
+    "watch"
   ]
 }
