@@ -12,6 +12,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "build": "browserify example/index.js -o example/build.js -dv"
+  },
   "files": [
     "index.js"
   ],
@@ -22,5 +25,8 @@
     "charging",
     "level",
     "watch"
-  ]
+  ],
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  }
 }
