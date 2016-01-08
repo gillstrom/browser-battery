@@ -1,8 +1,14 @@
 'use strict';
 const browserBattery = require('../');
 
-browserBattery().then(battery => {
-	document.querySelector('div').textContent = `You have ${battery.level * 100}% battery left`;
-}).catch(err => {
-	console.error(err);
-});
+function changeText(level) {
+	document.querySelector('div').textContent = `You have ${level}% battery left`;
+}
+
+browserBattery()
+	.then(battery => {
+		changeText(battery.level * 100);
+
+		battery.onlevelchange = () => changeText(battery.level * 100);
+	})
+	.catch(err => console.error(err));
