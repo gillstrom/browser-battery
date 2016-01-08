@@ -15,9 +15,9 @@ $ npm install --save browser-battery
 ## Usage
 
 ```js
-var browserBattery = require('browser-battery');
+const browserBattery = require('browser-battery');
 
-browserBattery(function (err, battery) {
+browserBattery().then(battery => {
 	console.log(battery);
 	/*
 	{
@@ -34,7 +34,7 @@ browserBattery(function (err, battery) {
 });
 
 // Use the event listeners
-browserBattery(function (err, battery) {
+browserBattery().then(battery => {
 	battery.onlevelchange = function () {
 		console.log(battery.level);
 		//=> 0.89
